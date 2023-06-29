@@ -1,0 +1,295 @@
+html{
+    scroll-behavior: smooth;
+  }
+  body{
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+    font-family:"Poppins";
+  }
+  #sec1{
+    background-image:url("bg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:800px;
+  }
+  header{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    color: white;
+  }
+  #div1{
+    margin-left: 20px;
+    display:flex;
+    justify-content: flex-start;
+    margin-top: 20px;
+  }
+  #div1 img{
+    height: 50px;
+    width: 50px;
+  }
+  #div1 p{
+    text-transform: uppercase;
+    font-size:27px;
+    margin-top:4px;
+    margin-left:10px;
+    font-weight: 800;
+    text-shadow:2px 2px 2px rgb(26,26,26,0.5);
+  }
+  header nav,#div2{
+    margin-top: 30px;
+    margin-left:30px;
+  }
+  nav a{
+    text-decoration: none;
+    color: white;
+    position: relative; 
+    margin-left: 20px;
+    text-transform: uppercase;
+    font-size: 17px;
+    letter-spacing: 1px;
+  }
+  nav a:hover{
+    text-shadow:1px 1px 1px rgb(26,26,26,0.5);
+  }
+  nav a::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 0;
+    height: 2px;
+    background-color:rgb(255, 102, 0);
+    transition: width 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+  }
+  @media (hover: hover) and (pointer: fine) {
+    nav a:hover::before{
+      left: 0;
+      right: auto;
+      width: 100%;
+    }
+  }
+  #div2{
+    margin-right: 60px;
+    text-transform: uppercase;
+  }
+  #div2 a{
+    text-decoration: none;
+    color: black;
+  }
+  /* button CSS */
+  .button-73 {
+    appearance: none;
+    background-color: #FFFFFF;
+    border-radius: 40em;
+    border-style: none;
+    box-shadow: #ADCFFF 0 -12px 6px inset;
+    box-sizing: border-box;
+    color: #000000;
+    cursor: pointer;
+    display: inline-block;
+    font-family: -apple-system,sans-serif;
+    font-size: 1.2rem;
+    font-weight: 700;
+    letter-spacing: -.24px;
+    margin: 0;
+    outline: none;
+    padding: 1rem 1.3rem;
+    quotes: auto;
+    text-align: center;
+    text-decoration: none;
+    transition: all .15s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+  }
+  
+  .button-73:hover {
+    background-color: #FFC229;
+    box-shadow: #FF6314 0 -6px 8px inset;
+    transform: scale(1.125);
+  }
+  
+  .button-73:active {
+    transform: scale(1.025);
+  }
+  
+  @media (min-width: 768px) {
+    .button-73 {
+      font-size: 1.5rem;
+      padding: .75rem 2rem;
+    }
+  }
+  /* main section*/
+main h1{
+    text-align: center;
+    color: white;
+    font-size:36px;
+    text-shadow:2px 2px 2px rgb(26,26,26,0.5);
+}
+/*cards*/
+.cards{
+    display: flex;
+    margin-top:-150px;
+    padding: 0px;
+}
+  *
+  {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  
+  h5
+  {
+    margin:0px;
+    font-size:1.4em;
+    font-weight:700;
+  }
+  
+  p
+  {
+    font-size:15px;
+    margin: 0px;
+  }
+  #lh{
+    font-size:17px;
+    font-weight: 700;
+    text-align: left;
+  }
+  .center
+  {
+    height:100vh;
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #center1{
+    margin-left:270px;
+  }
+  #center2{
+    margin-right:270px;
+  }
+  .property-card
+{
+  height:22em;
+  width:20em;
+  display:-webkit-box;
+  display:-ms-flexbox;
+  display:flex;
+  -webkit-box-orient:vertical;
+  -webkit-box-direction:normal;
+  -ms-flex-direction:column;
+  flex-direction:column;
+  position:relative;
+  -webkit-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -o-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  border-radius:16px;
+  overflow:hidden;
+  
+}
+.property-card:hover{
+    -webkit-box-shadow:  15px 15px 27px #e1e1e3, -15px -15px 27px #ffffff;
+  box-shadow:  15px 15px 27px #e1e1e3, -15px -15px 27px #ffffff;
+}
+/* ^-- The margin bottom is necessary for the drop shadow otherwise it gets clipped in certain cases. */
+
+/* Top Half of card, image. */
+
+.property-image
+{
+  height:10em;
+  width:20em;
+  padding:1em 2em;
+  position:Absolute;
+  top:0px;
+  -webkit-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -o-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+#property-image1{
+    background-image: url("img1.jpg");
+    background-size:cover;
+  background-repeat:no-repeat;
+}
+#property-image2{
+    background-image: url("img2.webp");
+    background-size:cover;
+  background-repeat:no-repeat;
+}
+
+/* Bottom Card Section */
+
+.property-description
+{
+  background-color: #FAFAFC;
+  height:13em;
+  width:20em;
+  position:absolute;
+  bottom:0em;
+  -webkit-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -o-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  padding: 0.5em 1em;
+  text-align:center;
+}
+.property-description ul{
+    margin-top:-3px;
+    text-align: left;
+}
+.property-description ul li{
+    font-size:15px;
+}
+.property-description div p{
+    color:rgb(51, 51, 51);
+    text-align:left;
+}
+.property-description div{
+    display: flex;
+    justify-content: start;
+    margin-top: 20px;
+}
+.year{
+    margin-left:14px;
+    margin-top:3px;
+}
+/* Social Icons */
+
+.property-social-icons
+{
+  width:1em;
+  height:1em;
+  background-color:black;
+  position:absolute;
+  bottom:1em;
+  left:1em;
+  -webkit-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -o-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+/* Property Cards Hover States */
+
+.property-card:hover .property-description
+{
+  height:0em;
+  padding:0px 1em;
+}
+.property-card:hover .property-image
+{
+  height:22em;
+}
+
+.property-card:hover .property-social-icons
+{
+  background-color:white;
+}
+
+.property-card:hover .property-social-icons:hover
+{
+  background-color:yellow;
+  cursor:pointer;
+}
